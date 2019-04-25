@@ -1,0 +1,11 @@
+<launch>
+	
+	<node pkg= "finalnodes" type= "perfectLocalization.py" name= "perfectLocalization"/>
+	<node pkg= "finalnodes" type= "traverse" name= "traverse"/>
+	<node pkg= "finalnodes" type= "movement" name= "movement"/>
+	<node pkg= "finalnodes" type= "objectDetection" name= "objectDetection"/>
+	<node pkg= "finalnodes" type= "calcGoal" name= "calcGoal" output= "screen"/>
+	<node pkg= "finalnodes" type= "discreteMap" name= "discreteMap" output= "screen"/>
+
+
+</launch>
